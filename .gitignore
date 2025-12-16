@@ -1,0 +1,29 @@
+# Vivado generated
+.cache/
+.runs/
+.sim/
+.hw/
+.tmp/
+xsim.dir/
+*.log
+*.jou
+*.wdb
+
+# IP & BD generated
+**/ip/
+**/ipshared/
+**/sim/
+**/synth/
+**/impl/
+
+# Vitis / HLS
+.vitis/
+.autopilot/
+solution*/
+syn/
+csynth/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/

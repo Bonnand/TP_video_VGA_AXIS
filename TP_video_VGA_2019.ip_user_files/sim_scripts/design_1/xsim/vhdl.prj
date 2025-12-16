@@ -1,0 +1,10 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/sim/design_1.vhd" \
+"../../../bd/design_1/ip/design_1_c_counter_binary_0_1/sim/design_1_c_counter_binary_0_1.vhd" \
+"../../../bd/design_1/ip/design_1_mux_video_0_0_1/sim/design_1_mux_video_0_0_1.vhd" \
+"../../../bd/design_1/ip/design_1_proc_sys_reset_0_1/sim/design_1_proc_sys_reset_0_1.vhd" \
+"../../../bd/design_1/ip/design_1_proc_sys_reset_1_1/sim/design_1_proc_sys_reset_1_1.vhd" \
+"../../../bd/design_1/ip/design_1_v_tc_0_1/sim/design_1_v_tc_0_1.vhd" \
+"../../../bd/design_1/ip/design_1_v_tc_1_1/sim/design_1_v_tc_1_1.vhd" \
+
+nosort

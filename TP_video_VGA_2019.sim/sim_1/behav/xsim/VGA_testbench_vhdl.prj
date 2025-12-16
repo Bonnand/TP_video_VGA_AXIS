@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../TP_video_VGA_2019.srcs/sources_1/new/mux_video_0.vhd" \
+"../../../../TP_video_VGA_2019.ip_user_files/bd/design_1/sim/design_1.vhd" \
+"../../../../TP_video_VGA_2019.ip_user_files/bd/design_1/ip/design_1_c_counter_binary_0_1/sim/design_1_c_counter_binary_0_1.vhd" \
+"../../../../TP_video_VGA_2019.ip_user_files/bd/design_1/ip/design_1_mux_video_0_0_1/sim/design_1_mux_video_0_0_1.vhd" \
+"../../../../TP_video_VGA_2019.ip_user_files/bd/design_1/ip/design_1_proc_sys_reset_0_1/sim/design_1_proc_sys_reset_0_1.vhd" \
+"../../../../TP_video_VGA_2019.ip_user_files/bd/design_1/ip/design_1_proc_sys_reset_1_1/sim/design_1_proc_sys_reset_1_1.vhd" \
+"../../../../TP_video_VGA_2019.ip_user_files/bd/design_1/ip/design_1_v_tc_0_1/sim/design_1_v_tc_0_1.vhd" \
+"../../../../TP_video_VGA_2019.ip_user_files/bd/design_1/ip/design_1_v_tc_1_1/sim/design_1_v_tc_1_1.vhd" \
+"../../../../TP_video_VGA_2019.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" \
+"../../../../../TP_video_VGA/TP_video_VGA.srcs/sim_1/new/VGA_testbench.vhd" \
+
+# Do not sort compile order
+nosort

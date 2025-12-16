@@ -1,0 +1,67 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.34466",
+   "Default View_TopLeft":"-93,-499",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port SW1 -pg 1 -lvl 0 -x -60 -y 120 -defaultsOSRD
+preplace port clk -pg 1 -lvl 0 -x -60 -y 610 -defaultsOSRD
+preplace port hsync_out_0 -pg 1 -lvl 2 -x 2790 -y 30 -defaultsOSRD
+preplace port reset_n -pg 1 -lvl 0 -x -60 -y 520 -defaultsOSRD
+preplace port vsync_out_0 -pg 1 -lvl 2 -x 2790 -y 60 -defaultsOSRD
+preplace portBus B -pg 1 -lvl 2 -x 2790 -y 540 -defaultsOSRD
+preplace portBus G -pg 1 -lvl 2 -x 2790 -y 480 -defaultsOSRD
+preplace portBus R -pg 1 -lvl 2 -x 2790 -y 510 -defaultsOSRD
+preplace inst c_counter_binary_0 -pg 1 -lvl 1 -x 1400 -y 2490 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 1400 -y -170 -defaultsOSRD
+preplace inst const_GND -pg 1 -lvl 1 -x 1400 -y 2370 -defaultsOSRD
+preplace inst const_VDD -pg 1 -lvl 1 -x 1400 -y 2270 -defaultsOSRD
+preplace inst mux_video_0_0 -pg 1 -lvl 1 -x 1400 -y 2160 -defaultsOSRD
+preplace inst myip_invert_0 -pg 1 -lvl 1 -x 1400 -y 1950 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 1400 -y 30 -defaultsOSRD
+preplace inst proc_sys_reset_1 -pg 1 -lvl 1 -x 1400 -y 1710 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 1 -x 1400 -y 1440 -defaultsOSRD
+preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 1 -x 1400 -y 1080 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 1 -x 1400 -y 790 -defaultsOSRD
+preplace inst v_tc_1 -pg 1 -lvl 1 -x 1400 -y 220 -defaultsOSRD
+preplace inst v_vid_in_axi4s_0 -pg 1 -lvl 1 -x 1400 -y 500 -defaultsOSRD
+preplace netloc SW1_1 1 0 1 -40J 120n
+preplace netloc bit_extraction_0_DOUT 1 1 1 1830 480n
+preplace netloc c_counter_binary_0_Q 1 0 2 60 -490 1800
+preplace netloc clk_in1_0_1 1 0 1 -30J -160n
+preplace netloc clk_wiz_0_clk_out1 1 0 2 0 -480 1700
+preplace netloc clk_wiz_0_clk_out2 1 0 2 10 -470 1690
+preplace netloc clk_wiz_0_locked 1 0 2 50 2600 1780
+preplace netloc const_GND_dout 1 0 2 80 2610 1600J
+preplace netloc const_VDD_dout 1 0 2 70 2590 1580
+preplace netloc myip_invert_0_m00_axis_tdata 1 0 2 190 -250 1660
+preplace netloc myip_invert_0_m00_axis_tlast 1 0 2 200 -90 1650
+preplace netloc myip_invert_0_m00_axis_tstrb 1 0 2 210 -80 1610
+preplace netloc myip_invert_0_m00_axis_tvalid 1 0 2 220 -70 1620
+preplace netloc myip_invert_0_s00_axis_tready 1 0 2 120 -260 1580
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 0 2 130 2580 1690
+preplace netloc proc_sys_reset_1_peripheral_aresetn 1 0 2 180 2570 1590
+preplace netloc resetn_0_1 1 0 1 -20 -180n
+preplace netloc v_axi4s_vid_out_0_s_axis_video_tready 1 0 2 30 2670 1700
+preplace netloc v_axi4s_vid_out_0_vid_active_video 1 0 2 170 2620 1640
+preplace netloc v_axi4s_vid_out_0_vid_data 1 0 2 230 2630 1630
+preplace netloc v_axi4s_vid_out_0_vid_hsync 1 0 2 90 -290 1820
+preplace netloc v_axi4s_vid_out_0_vid_vsync 1 0 2 100 -280 1810
+preplace netloc v_axi4s_vid_out_0_vtg_ce 1 0 2 170 -340 1770
+preplace netloc v_tc_0_active_video_out 1 0 2 20 -330 1680
+preplace netloc v_tc_0_hblank_out 1 0 2 180 -320 1670
+preplace netloc v_tc_0_hsync_out 1 0 2 -10 -360 1760
+preplace netloc v_tc_0_vblank_out 1 0 2 80 -350 1750
+preplace netloc v_tc_0_vsync_out 1 0 2 160 -310 1710
+preplace netloc v_vid_in_axi4s_0_m_axis_video_tdata 1 0 2 110 -270 1590
+preplace netloc v_vid_in_axi4s_0_m_axis_video_tlast 1 0 2 140 2640 1740
+preplace netloc v_vid_in_axi4s_0_m_axis_video_tuser 1 0 2 150 2650 1730
+preplace netloc v_vid_in_axi4s_0_m_axis_video_tvalid 1 0 2 160 2660 1720
+preplace netloc v_tc_1_vtiming_out 1 0 2 40 2680 1790
+preplace netloc v_vid_in_axi4s_0_vtiming_out 1 0 2 230 -300 1600
+levelinfo -pg 1 -60 1400 2790
+pagesize -pg 1 -db -bbox -sgen -160 -500 2920 2690
+"
+}
+

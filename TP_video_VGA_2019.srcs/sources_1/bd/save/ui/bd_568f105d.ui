@@ -1,0 +1,94 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.193491",
+   "Default View_TopLeft":"-1287,5",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port SW1 -pg 1 -lvl 0 -x -60 -y 250 -defaultsOSRD
+preplace port clk -pg 1 -lvl 0 -x -60 -y 1540 -defaultsOSRD
+preplace port hsync_out_0 -pg 1 -lvl 2 -x 3020 -y 800 -defaultsOSRD
+preplace port reset_n -pg 1 -lvl 0 -x -60 -y 1470 -defaultsOSRD
+preplace port vsync_out_0 -pg 1 -lvl 2 -x 3020 -y 830 -defaultsOSRD
+preplace portBus B -pg 1 -lvl 2 -x 3020 -y 680 -defaultsOSRD
+preplace portBus G -pg 1 -lvl 2 -x 3020 -y 710 -defaultsOSRD
+preplace portBus R -pg 1 -lvl 2 -x 3020 -y 740 -defaultsOSRD
+preplace portBus SW2 -pg 1 -lvl 0 -x -60 -y 1440 -defaultsOSRD
+preplace portBus SW3 -pg 1 -lvl 0 -x -60 -y 1630 -defaultsOSRD
+preplace inst and_3bits_0 -pg 1 -lvl 1 -x 1550 -y -1460 -defaultsOSRD
+preplace inst axi_inverter_0 -pg 1 -lvl 1 -x 1550 -y -1240 -defaultsOSRD
+preplace inst axis_binome_numb_0 -pg 1 -lvl 1 -x 1550 -y 2400 -defaultsOSRD
+preplace inst c_counter_binary_0 -pg 1 -lvl 1 -x 1550 -y 2180 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 1550 -y 2040 -defaultsOSRD
+preplace inst const_GND -pg 1 -lvl 1 -x 1550 -y 1920 -defaultsOSRD
+preplace inst const_VDD -pg 1 -lvl 1 -x 1550 -y 1820 -defaultsOSRD
+preplace inst mux_video_0_0 -pg 1 -lvl 1 -x 1550 -y 1710 -defaultsOSRD
+preplace inst myip_invert_0 -pg 1 -lvl 1 -x 1550 -y -940 -defaultsOSRD
+preplace inst myip_mux_axis_0 -pg 1 -lvl 1 -x 1550 -y -480 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 1550 -y -30 -defaultsOSRD
+preplace inst proc_sys_reset_1 -pg 1 -lvl 1 -x 1550 -y 150 -defaultsOSRD
+preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 1 -x 1550 -y 420 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 1 -x 1550 -y 710 -defaultsOSRD
+preplace inst v_tc_1 -pg 1 -lvl 1 -x 1550 -y 1520 -defaultsOSRD
+preplace inst v_vid_in_axi4s_0 -pg 1 -lvl 1 -x 1550 -y 1240 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 1 -x 1550 -y 1000 -defaultsOSRD
+preplace netloc In0_0_1 1 0 1 -20J 990n
+preplace netloc In1_0_1 1 0 1 -10J 1010n
+preplace netloc SW1_1 1 0 1 -30J -1150n
+preplace netloc and_3bits_0_tready_out 1 1 1 1900 -1460n
+preplace netloc axi_inverter_0_A_TREADY 1 0 1 310 -1460n
+preplace netloc axi_inverter_0_B_TDATA 1 0 2 150 2770 2010
+preplace netloc axi_inverter_0_B_TLAST 1 0 2 180 2780 1990
+preplace netloc axi_inverter_0_B_TSTRB 1 0 2 130 2790 2020
+preplace netloc axi_inverter_0_B_TVALID 1 0 2 160 2800 2000
+preplace netloc axis_binome_numb_0_A_TREADY 1 0 1 250 -1480n
+preplace netloc axis_binome_numb_0_B_TDATA 1 0 2 190 2810 1840
+preplace netloc axis_binome_numb_0_B_TLAST 1 0 2 240 2820 1820
+preplace netloc axis_binome_numb_0_B_TSTRB 1 0 2 170 2830 1860
+preplace netloc axis_binome_numb_0_B_TVALID 1 0 2 200 2840 1830
+preplace netloc bit_extraction_0_DOUT 1 1 1 2100 680n
+preplace netloc c_counter_binary_0_Q 1 0 2 280 -1560 1950
+preplace netloc clk_in1_0_1 1 0 1 -40J 1540n
+preplace netloc clk_wiz_0_clk_out1 1 0 2 90 -1610 1970
+preplace netloc clk_wiz_0_clk_out2 1 0 2 140 -1620 1980
+preplace netloc clk_wiz_0_locked 1 0 2 310 2560 1730
+preplace netloc const_GND_dout 1 0 2 290 2670 1760J
+preplace netloc const_VDD_dout 1 0 2 120 2650 1750
+preplace netloc myip_invert_0_m00_axis_tdata 1 0 2 20 2850 2060
+preplace netloc myip_invert_0_m00_axis_tlast 1 0 2 50 2860 2030
+preplace netloc myip_invert_0_m00_axis_tstrb 1 0 2 10 2870 2070
+preplace netloc myip_invert_0_m00_axis_tvalid 1 0 2 30 2880 2050
+preplace netloc myip_invert_0_s00_axis_tready 1 0 1 400 -1440n
+preplace netloc myip_mux_axis_0_m00_axis_tdata 1 0 2 330 -160 1750
+preplace netloc myip_mux_axis_0_m00_axis_tlast 1 0 2 360 -150 1740
+preplace netloc myip_mux_axis_0_m00_axis_tstrb 1 0 2 400 -130 1760
+preplace netloc myip_mux_axis_0_m00_axis_tvalid 1 0 2 390 1640 1770
+preplace netloc myip_mux_axis_0_s00_axis_tready 1 0 2 40 2890 2040
+preplace netloc myip_mux_axis_0_s01_axis_tready 1 0 2 60 2900 2080
+preplace netloc myip_mux_axis_0_s02_axis_tready 1 0 2 70 2920 1900
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 0 2 300 2640 1890J
+preplace netloc proc_sys_reset_1_peripheral_aresetn 1 0 2 100 -1600 1910
+preplace netloc resetn_0_1 1 0 1 0 -50n
+preplace netloc v_axi4s_vid_out_0_s_axis_video_tready 1 0 2 390 -140 1730
+preplace netloc v_axi4s_vid_out_0_vid_active_video 1 0 2 260 -1550 1790
+preplace netloc v_axi4s_vid_out_0_vid_data 1 0 2 270 -1540 1780
+preplace netloc v_axi4s_vid_out_0_vid_hsync 1 1 1 2110 380n
+preplace netloc v_axi4s_vid_out_0_vid_vsync 1 1 1 2090 400n
+preplace netloc v_axi4s_vid_out_0_vtg_ce 1 0 2 370 2600 1880
+preplace netloc v_tc_0_active_video_out 1 0 2 330 2580 1810
+preplace netloc v_tc_0_hblank_out 1 0 2 340 2590 1800
+preplace netloc v_tc_0_hsync_out 1 0 2 320 2630 1870
+preplace netloc v_tc_0_vblank_out 1 0 2 350 2610 1790
+preplace netloc v_tc_0_vsync_out 1 0 2 360 2620 1780
+preplace netloc v_vid_in_axi4s_0_m_axis_video_tdata 1 0 2 210 -1590 1920
+preplace netloc v_vid_in_axi4s_0_m_axis_video_tlast 1 0 2 80 2660 1850
+preplace netloc v_vid_in_axi4s_0_m_axis_video_tuser 1 0 2 220 -1580 1940
+preplace netloc v_vid_in_axi4s_0_m_axis_video_tvalid 1 0 2 230 -1570 1930
+preplace netloc xlconcat_0_dout 1 0 2 110 2910 1960
+preplace netloc v_tc_1_vtiming_out 1 0 2 400 1630 1730
+preplace netloc v_vid_in_axi4s_0_vtiming_out 1 0 2 380 2570 1740
+levelinfo -pg 1 -60 1550 3020
+pagesize -pg 1 -db -bbox -sgen -170 -1630 3150 2930
+"
+}
+0

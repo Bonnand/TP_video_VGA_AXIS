@@ -1,0 +1,50 @@
+#include "ap_axi_sdata.h"
+#include "hls_stream.h"
+
+#define DWIDTH 8
+typedef ap_int<DWIDTH> type;
+typedef hls::axis<type, 0, 0, 0> pkt;
+
+const int FONT_HEIGHT = 5;
+const int FONT_WIDTH = 3;
+const type two[FONT_HEIGHT] = {
+    0b111,
+    0b001,
+    0b111,
+    0b100,
+    0b111
+};
+
+void axis_binome_numb(hls::stream<pkt> &A, bool draw2, hls::stream<pkt> &B) {
+#pragma HLS INTERFACE axis port=A
+#pragma HLS INTERFACE axis port=B
+
+    pkt tmp, t1;
+    type mask;
+
+    while (true) {
+		for(int y = 0; y < 480; y++){
+			for(int x = 0; x < 640; x++){
+				A.read(tmp);
+				t1 = tmp;
+
+				if(draw2 && y < FONT_HEIGHT && x < FONT_WIDTH) {
+
+					mask = 1 << ((FONT_WIDTH - 1) - x);
+
+					if((two[y] & mask)){
+						t1.data = 255;
+					}
+					else{
+						t1.data = 0;
+					}
+
+				} else {
+					t1.data = tmp.data;
+				}
+
+				B.write(t1);
+			}
+		}
+    }
+}

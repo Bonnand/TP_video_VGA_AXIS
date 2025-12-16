@@ -1,0 +1,529 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7z020clg484-1",
+      "name": "partie_3_V1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.2"
+    },
+    "design_tree": {
+      "c_counter_binary_0": "",
+      "clk_wiz_0": "",
+      "const_GND": "",
+      "const_VDD": "",
+      "mux_video_0_0": "",
+      "myip_invert_0": "",
+      "proc_sys_reset_0": "",
+      "proc_sys_reset_1": "",
+      "system_ila_0": "",
+      "v_axi4s_vid_out_0": "",
+      "v_tc_0": "",
+      "v_tc_1": "",
+      "v_vid_in_axi4s_0": ""
+    },
+    "ports": {
+      "B": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "G": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "R": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "SW1": {
+        "direction": "I"
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I"
+      },
+      "hsync_out_0": {
+        "direction": "O"
+      },
+      "reset_n": {
+        "type": "rst",
+        "direction": "I"
+      },
+      "vsync_out_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "c_counter_binary_0": {
+        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
+        "xci_name": "partie_3_V1_c_counter_binary_0_0",
+        "parameters": {
+          "CE": {
+            "value": "true"
+          },
+          "Output_Width": {
+            "value": "8"
+          },
+          "SCLR": {
+            "value": "true"
+          }
+        }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "partie_3_V1_clk_wiz_0_0",
+        "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "114.767"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "87.466"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "108.000"
+          },
+          "CLKOUT2_JITTER": {
+            "value": "155.403"
+          },
+          "CLKOUT2_PHASE_ERROR": {
+            "value": "87.466"
+          },
+          "CLKOUT2_REQUESTED_OUT_FREQ": {
+            "value": "25.2"
+          },
+          "CLKOUT2_USED": {
+            "value": "true"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "11.875"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "11.000"
+          },
+          "MMCM_CLKOUT1_DIVIDE": {
+            "value": "47"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "1"
+          },
+          "NUM_OUT_CLKS": {
+            "value": "2"
+          },
+          "RESET_PORT": {
+            "value": "resetn"
+          },
+          "RESET_TYPE": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      },
+      "const_GND": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "partie_3_V1_const_GND_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
+      },
+      "const_VDD": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "partie_3_V1_const_VDD_0"
+      },
+      "mux_video_0_0": {
+        "vlnv": "xilinx.com:module_ref:mux_video_0:1.0",
+        "xci_name": "partie_3_V1_mux_video_0_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux_video_0",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "DIN": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "Sel_ActVideo": {
+            "direction": "I"
+          },
+          "DOUT": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "myip_invert_0": {
+        "vlnv": "xilinx.com:user:myip_invert:1.0",
+        "xci_name": "partie_3_V1_myip_invert_0_0"
+      },
+      "proc_sys_reset_0": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "xci_name": "partie_3_V1_proc_sys_reset_0_0"
+      },
+      "proc_sys_reset_1": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "xci_name": "partie_3_V1_proc_sys_reset_1_0"
+      },
+      "system_ila_0": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "xci_name": "partie_3_V1_system_ila_0_0",
+        "parameters": {
+          "C_MON_TYPE": {
+            "value": "NATIVE"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "13"
+          },
+          "C_PROBE0_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE10_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE11_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE12_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE1_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE2_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE3_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE4_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE5_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE6_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE7_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE8_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE9_TYPE": {
+            "value": "0"
+          }
+        }
+      },
+      "v_axi4s_vid_out_0": {
+        "vlnv": "xilinx.com:ip:v_axi4s_vid_out:4.0",
+        "xci_name": "partie_3_V1_v_axi4s_vid_out_0_0",
+        "parameters": {
+          "C_ADDR_WIDTH": {
+            "value": "11"
+          },
+          "C_HAS_ASYNC_CLK": {
+            "value": "1"
+          },
+          "C_S_AXIS_VIDEO_FORMAT": {
+            "value": "12"
+          }
+        }
+      },
+      "v_tc_0": {
+        "vlnv": "xilinx.com:ip:v_tc:6.2",
+        "xci_name": "partie_3_V1_v_tc_0_0",
+        "parameters": {
+          "HAS_AXI4_LITE": {
+            "value": "false"
+          },
+          "VIDEO_MODE": {
+            "value": "480p"
+          },
+          "enable_detection": {
+            "value": "false"
+          }
+        }
+      },
+      "v_tc_1": {
+        "vlnv": "xilinx.com:ip:v_tc:6.2",
+        "xci_name": "partie_3_V1_v_tc_1_0",
+        "parameters": {
+          "HAS_AXI4_LITE": {
+            "value": "false"
+          },
+          "VIDEO_MODE": {
+            "value": "480p"
+          },
+          "auto_generation_mode": {
+            "value": "true"
+          }
+        }
+      },
+      "v_vid_in_axi4s_0": {
+        "vlnv": "xilinx.com:ip:v_vid_in_axi4s:4.0",
+        "xci_name": "partie_3_V1_v_vid_in_axi4s_0_0",
+        "parameters": {
+          "C_HAS_ASYNC_CLK": {
+            "value": "1"
+          },
+          "C_M_AXIS_VIDEO_FORMAT": {
+            "value": "12"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "v_tc_1_vtiming_out": {
+        "interface_ports": [
+          "v_tc_1/vtiming_out",
+          "v_axi4s_vid_out_0/vtiming_in"
+        ]
+      },
+      "v_vid_in_axi4s_0_vtiming_out": {
+        "interface_ports": [
+          "v_vid_in_axi4s_0/vtiming_out",
+          "v_tc_1/vtiming_in"
+        ]
+      }
+    },
+    "nets": {
+      "SW1_1": {
+        "ports": [
+          "SW1",
+          "myip_invert_0/VidOrig_nVideoInv"
+        ]
+      },
+      "bit_extraction_0_DOUT": {
+        "ports": [
+          "mux_video_0_0/DOUT",
+          "R",
+          "G",
+          "B"
+        ]
+      },
+      "c_counter_binary_0_Q": {
+        "ports": [
+          "c_counter_binary_0/Q",
+          "v_vid_in_axi4s_0/vid_data"
+        ]
+      },
+      "clk_in1_0_1": {
+        "ports": [
+          "clk",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "proc_sys_reset_1/slowest_sync_clk",
+          "v_vid_in_axi4s_0/aclk",
+          "v_axi4s_vid_out_0/aclk",
+          "myip_invert_0/s00_axis_aclk",
+          "myip_invert_0/m00_axis_aclk",
+          "system_ila_0/clk"
+        ]
+      },
+      "clk_wiz_0_clk_out2": {
+        "ports": [
+          "clk_wiz_0/clk_out2",
+          "c_counter_binary_0/CLK",
+          "proc_sys_reset_0/slowest_sync_clk",
+          "v_tc_0/clk",
+          "v_vid_in_axi4s_0/vid_io_in_clk",
+          "v_tc_1/clk",
+          "v_axi4s_vid_out_0/vid_io_out_clk"
+        ]
+      },
+      "clk_wiz_0_locked": {
+        "ports": [
+          "clk_wiz_0/locked",
+          "proc_sys_reset_0/dcm_locked",
+          "proc_sys_reset_1/dcm_locked"
+        ]
+      },
+      "const_GND_dout": {
+        "ports": [
+          "const_GND/dout",
+          "v_vid_in_axi4s_0/vid_io_in_reset",
+          "v_axi4s_vid_out_0/vid_io_out_reset"
+        ]
+      },
+      "const_VDD_dout": {
+        "ports": [
+          "const_VDD/dout",
+          "v_vid_in_axi4s_0/vid_io_in_ce",
+          "v_vid_in_axi4s_0/aclken",
+          "v_tc_1/clken",
+          "v_tc_1/det_clken",
+          "v_axi4s_vid_out_0/vid_io_out_ce"
+        ]
+      },
+      "myip_invert_0_m00_axis_tdata": {
+        "ports": [
+          "myip_invert_0/m00_axis_tdata",
+          "v_axi4s_vid_out_0/s_axis_video_tdata",
+          "system_ila_0/probe0"
+        ]
+      },
+      "myip_invert_0_m00_axis_tlast": {
+        "ports": [
+          "myip_invert_0/m00_axis_tlast",
+          "v_axi4s_vid_out_0/s_axis_video_tlast",
+          "system_ila_0/probe1"
+        ]
+      },
+      "myip_invert_0_m00_axis_tstrb": {
+        "ports": [
+          "myip_invert_0/m00_axis_tstrb",
+          "v_axi4s_vid_out_0/s_axis_video_tuser",
+          "system_ila_0/probe2"
+        ]
+      },
+      "myip_invert_0_m00_axis_tvalid": {
+        "ports": [
+          "myip_invert_0/m00_axis_tvalid",
+          "v_axi4s_vid_out_0/s_axis_video_tvalid",
+          "system_ila_0/probe3"
+        ]
+      },
+      "myip_invert_0_s00_axis_tready": {
+        "ports": [
+          "myip_invert_0/s00_axis_tready",
+          "v_vid_in_axi4s_0/m_axis_video_tready",
+          "system_ila_0/probe4"
+        ]
+      },
+      "proc_sys_reset_0_peripheral_aresetn": {
+        "ports": [
+          "proc_sys_reset_0/peripheral_aresetn",
+          "v_tc_0/resetn",
+          "v_tc_1/resetn"
+        ]
+      },
+      "proc_sys_reset_1_peripheral_aresetn": {
+        "ports": [
+          "proc_sys_reset_1/peripheral_aresetn",
+          "v_vid_in_axi4s_0/aresetn",
+          "v_axi4s_vid_out_0/aresetn",
+          "myip_invert_0/s00_axis_aresetn",
+          "myip_invert_0/m00_axis_aresetn"
+        ]
+      },
+      "resetn_0_1": {
+        "ports": [
+          "reset_n",
+          "clk_wiz_0/resetn",
+          "proc_sys_reset_0/ext_reset_in",
+          "proc_sys_reset_1/ext_reset_in"
+        ]
+      },
+      "v_axi4s_vid_out_0_s_axis_video_tready": {
+        "ports": [
+          "v_axi4s_vid_out_0/s_axis_video_tready",
+          "myip_invert_0/m00_axis_tready",
+          "system_ila_0/probe5"
+        ]
+      },
+      "v_axi4s_vid_out_0_vid_active_video": {
+        "ports": [
+          "v_axi4s_vid_out_0/vid_active_video",
+          "mux_video_0_0/Sel_ActVideo",
+          "system_ila_0/probe6"
+        ]
+      },
+      "v_axi4s_vid_out_0_vid_data": {
+        "ports": [
+          "v_axi4s_vid_out_0/vid_data",
+          "mux_video_0_0/DIN"
+        ]
+      },
+      "v_axi4s_vid_out_0_vid_hsync": {
+        "ports": [
+          "v_axi4s_vid_out_0/vid_hsync",
+          "hsync_out_0",
+          "system_ila_0/probe7"
+        ]
+      },
+      "v_axi4s_vid_out_0_vid_vsync": {
+        "ports": [
+          "v_axi4s_vid_out_0/vid_vsync",
+          "vsync_out_0",
+          "system_ila_0/probe8"
+        ]
+      },
+      "v_axi4s_vid_out_0_vtg_ce": {
+        "ports": [
+          "v_axi4s_vid_out_0/vtg_ce",
+          "v_tc_1/gen_clken"
+        ]
+      },
+      "v_tc_0_active_video_out": {
+        "ports": [
+          "v_tc_0/active_video_out",
+          "c_counter_binary_0/CE",
+          "v_vid_in_axi4s_0/vid_active_video"
+        ]
+      },
+      "v_tc_0_hblank_out": {
+        "ports": [
+          "v_tc_0/hblank_out",
+          "v_vid_in_axi4s_0/vid_hblank"
+        ]
+      },
+      "v_tc_0_hsync_out": {
+        "ports": [
+          "v_tc_0/hsync_out",
+          "c_counter_binary_0/SCLR",
+          "v_vid_in_axi4s_0/vid_hsync"
+        ]
+      },
+      "v_tc_0_vblank_out": {
+        "ports": [
+          "v_tc_0/vblank_out",
+          "v_vid_in_axi4s_0/vid_vblank"
+        ]
+      },
+      "v_tc_0_vsync_out": {
+        "ports": [
+          "v_tc_0/vsync_out",
+          "v_vid_in_axi4s_0/vid_vsync"
+        ]
+      },
+      "v_vid_in_axi4s_0_m_axis_video_tdata": {
+        "ports": [
+          "v_vid_in_axi4s_0/m_axis_video_tdata",
+          "myip_invert_0/s00_axis_tdata",
+          "system_ila_0/probe9"
+        ]
+      },
+      "v_vid_in_axi4s_0_m_axis_video_tlast": {
+        "ports": [
+          "v_vid_in_axi4s_0/m_axis_video_tlast",
+          "myip_invert_0/s00_axis_tlast",
+          "system_ila_0/probe10"
+        ]
+      },
+      "v_vid_in_axi4s_0_m_axis_video_tuser": {
+        "ports": [
+          "v_vid_in_axi4s_0/m_axis_video_tuser",
+          "myip_invert_0/s00_axis_tstrb",
+          "system_ila_0/probe11"
+        ]
+      },
+      "v_vid_in_axi4s_0_m_axis_video_tvalid": {
+        "ports": [
+          "v_vid_in_axi4s_0/m_axis_video_tvalid",
+          "myip_invert_0/s00_axis_tvalid",
+          "system_ila_0/probe12"
+        ]
+      }
+    }
+  }
+}

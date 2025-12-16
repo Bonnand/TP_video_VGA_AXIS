@@ -1,0 +1,46 @@
+state wait_vsync:
+if (VGA_source_bd_i/system_ila_0/U0/probe3_1 == 1'b1) then
+#test on v_tc_0_vsync_out
+goto wait_hsync;
+else
+goto wait_vsync;
+endif
+
+
+state wait_hsync:
+if (VGA_source_bd_i/system_ila_0/U0/probe4_1 == 1'bR) then
+#test on v_tc_0_hsync_out
+goto wait_active_video;
+else
+goto wait_hsync;
+endif
+
+state wait_active_video:
+if (VGA_source_bd_i/system_ila_0/U0/probe2_1 == 1'bR) then
+#test on v_tc_0_hsync_out
+reset_counter $counter0;
+goto count_LVAL;
+else
+goto wait_active_video;
+endif
+
+
+state count_LVAL:
+if ($counter0 != 16'hFFFF) then
+increment_counter $counter0;
+goto count_LVAL;
+else
+goto start_trigger;
+endif
+
+
+#state wait_active_video_equal_0:
+#if (VGA_source_bd_i/system_ila_0/U0/probe2_1 == 1'b1) then
+#goto start_trigger;
+#else
+#goto wait_active_video_equal_0;
+#endif
+
+
+state start_trigger:
+trigger;

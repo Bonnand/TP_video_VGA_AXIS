@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="HLS_TP_video" solutionName="solution2" date="2025-11-25T11:37:26.246+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="HLS_TP_video" solutionName="solution1" date="2025-11-25T10:18:38.325+0100" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_25_1' (src/axis_binome_numb.cpp:26:28) in function 'axis_binome_numb' the outer loop is not a perfect loop because there is nontrivial logic in the loop header.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-960.html" projectName="HLS_TP_video" solutionName="solution1" date="2025-11-25T10:18:35.962+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] 'VITIS_LOOP_25_1' (src/axis_binome_numb.cpp:26:28) in function 'axis_binome_numb' is an infinite loop." projectName="HLS_TP_video" solutionName="solution1" date="2025-11-25T10:18:35.846+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'two.V' in function 'axis_binome_numb'." projectName="HLS_TP_video" solutionName="solution1" date="2025-11-25T10:18:35.764+0100" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

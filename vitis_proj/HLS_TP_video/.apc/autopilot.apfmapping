@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="axi_inverter.cpp" path="C:\Users\abonn\Desktop\Cours_ESIREM\5eme_Annee\interface_systemes_embarques\TP\TP_video_VGA_2019\vitis_proj\src\axi_inverter.cpp"/>
+    <originFiles name="axis_binome_numb.cpp" path="C:\Users\abonn\Desktop\Cours_ESIREM\5eme_Annee\interface_systemes_embarques\TP\TP_video_VGA_2019\vitis_proj\src\axis_binome_numb.cpp"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,10 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+| clk_out2_design_1_clk_wiz_0_0 |clk_out1_design_1_clk_wiz_0_0 |design_1_i/system_ila_0/U0/ila_lib/U0/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[7].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[0]/D|
+| clk_out2_design_1_clk_wiz_0_0 |clk_out1_design_1_clk_wiz_0_0 |design_1_i/system_ila_0/U0/ila_lib/U0/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[0]/D|
+| clk_out2_design_1_clk_wiz_0_0 |clk_out1_design_1_clk_wiz_0_0 |                     design_1_i/system_ila_0/U0/ila_lib/U0/ila_core_inst/shifted_data_in_reg[7][15]_srl8/D|
+| clk_out2_design_1_clk_wiz_0_0 |clk_out1_design_1_clk_wiz_0_0 |design_1_i/system_ila_0/U0/ila_lib/U0/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[8].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[0]/D|
+| clk_out2_design_1_clk_wiz_0_0 |clk_out1_design_1_clk_wiz_0_0 |                     design_1_i/system_ila_0/U0/ila_lib/U0/ila_core_inst/shifted_data_in_reg[7][14]_srl8/D|
+| clk_out2_design_1_clk_wiz_0_0 |clk_out1_design_1_clk_wiz_0_0 |              design_1_i/system_ila_0/U0/ila_lib/U0/ila_core_inst/shifted_data_in_reg[7][13]_srl8_srlopt/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

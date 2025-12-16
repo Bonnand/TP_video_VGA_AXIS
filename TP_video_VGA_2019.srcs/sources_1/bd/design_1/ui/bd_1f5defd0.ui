@@ -1,0 +1,55 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.49426",
+   "Default View_TopLeft":"1091,128",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port SW1 -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
+preplace port clk -pg 1 -lvl 0 -x 0 -y 600 -defaultsOSRD
+preplace port hsync_out_0 -pg 1 -lvl 9 -x 2450 -y 340 -defaultsOSRD
+preplace port reset_n -pg 1 -lvl 0 -x 0 -y 510 -defaultsOSRD
+preplace port vsync_out_0 -pg 1 -lvl 9 -x 2450 -y 370 -defaultsOSRD
+preplace portBus B -pg 1 -lvl 9 -x 2450 -y 220 -defaultsOSRD
+preplace portBus G -pg 1 -lvl 9 -x 2450 -y 250 -defaultsOSRD
+preplace portBus R -pg 1 -lvl 9 -x 2450 -y 280 -defaultsOSRD
+preplace inst c_counter_binary_0 -pg 1 -lvl 4 -x 1020 -y 90 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 110 -y 590 -defaultsOSRD
+preplace inst const_GND -pg 1 -lvl 4 -x 1020 -y 720 -defaultsOSRD
+preplace inst const_VDD -pg 1 -lvl 4 -x 1020 -y 310 -defaultsOSRD
+preplace inst mux_video_0_0 -pg 1 -lvl 8 -x 2300 -y 280 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x 390 -y 460 -defaultsOSRD
+preplace inst proc_sys_reset_1 -pg 1 -lvl 4 -x 1020 -y 580 -defaultsOSRD
+preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 7 -x 2000 -y 390 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 3 -x 700 -y 190 -defaultsOSRD
+preplace inst v_tc_1 -pg 1 -lvl 6 -x 1680 -y 340 -defaultsOSRD
+preplace inst v_vid_in_axi4s_0 -pg 1 -lvl 5 -x 1370 -y 240 -defaultsOSRD
+preplace netloc bit_extraction_0_DOUT 1 8 1 2430 220n
+preplace netloc c_counter_binary_0_Q 1 4 1 1220 90n
+preplace netloc clk_in1_0_1 1 0 1 NJ 600
+preplace netloc clk_wiz_0_clk_out1 1 1 6 NJ 570 560J 550 840 420 1200 30 NJ 30 1850J
+preplace netloc clk_wiz_0_clk_out2 1 1 6 200 160 560 70 850 10 1230 40 1530 220 1810
+preplace netloc clk_wiz_0_locked 1 1 3 220 620 NJ 620 N
+preplace netloc const_GND_dout 1 4 3 1210 470 NJ 470 NJ
+preplace netloc const_VDD_dout 1 4 3 1190 50 1510 210 1830J
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 2 4 560 430 NJ 430 NJ 430 1520
+preplace netloc proc_sys_reset_1_peripheral_aresetn 1 4 3 1230 450 NJ 450 1820J
+preplace netloc resetn_0_1 1 0 4 20 510 210 560 NJ 560 NJ
+preplace netloc v_axi4s_vid_out_0_vid_active_video 1 7 1 2170 290n
+preplace netloc v_axi4s_vid_out_0_vid_data 1 7 1 2160 270n
+preplace netloc v_axi4s_vid_out_0_vid_hsync 1 7 2 NJ 350 2430J
+preplace netloc v_axi4s_vid_out_0_vid_vsync 1 7 2 NJ 370 NJ
+preplace netloc v_axi4s_vid_out_0_vtg_ce 1 5 3 1540 230 NJ 230 2150
+preplace netloc v_tc_0_active_video_out 1 3 2 850 170 1210
+preplace netloc v_tc_0_hblank_out 1 3 2 830J 180 1220
+preplace netloc v_tc_0_hsync_out 1 3 2 840 190 N
+preplace netloc v_tc_0_vblank_out 1 3 2 NJ 210 N
+preplace netloc v_tc_0_vsync_out 1 3 2 NJ 230 N
+preplace netloc v_tc_1_vtiming_out 1 6 1 N 330
+preplace netloc v_vid_in_axi4s_0_vtiming_out 1 5 1 1520 220n
+preplace netloc v_vid_in_axi4s_0_video_out1 1 5 2 NJ 200 1840
+levelinfo -pg 1 0 110 390 700 1020 1370 1680 2000 2300 2450
+pagesize -pg 1 -db -bbox -sgen -100 0 2580 780
+"
+}
+0

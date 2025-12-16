@@ -1,0 +1,30 @@
+state wait_vsync:
+if (VGA_source_bd_i/system_ila_0/U0/probe1_1 == 1'b1) then
+#test on v_tc_0_vsync_out
+goto wait_hsync;
+else
+goto wait_vsync;
+endif
+
+
+state wait_hsync:
+if (VGA_source_bd_i/system_ila_0/U0/probe0_1 == 1'bR) then
+#test on v_tc_0_hsync_out
+reset_counter $counter0;
+goto count_LVAL;
+else
+goto wait_hsync;
+endif
+
+
+state count_LVAL:
+if ($counter0 != 16'u10) then
+increment_counter $counter0;
+goto count_LVAL;
+else
+goto start_trigger;
+endif
+
+
+state start_trigger:
+trigger;
